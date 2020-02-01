@@ -37,8 +37,16 @@
 # print(time_favorito.values)
 # print(time_favorito.keys)
 
-dados_clientes = {'cliente':{'cl001':{'nome':'Rafeel da silva','idade':25,'telefone':'0119999999'},
-                             'cl002':{'nome':'Carla Pereira','idade':28, 'telefone':' '}}}
+dados_clientes = {'cliente': {'cl001': {'nome': 'Rafael da silva','idade': 25,'telefone': '011954243647'},
+                              'cl002': {'nome': 'Carla Pereira','idade': 28,'telefone': ''}}}
+
+#print(dados_clientes)
+#print(dados_clientes['cliente']['cl002']['nome'], dados_clientes)
+# dados_clientes['cliente']['cl002']['telefone'] = '11958555447'
+# print(dados_clientes)
+
+imprime_clientes = input('Digite o codigo do cliente : ')
+print(dados_clientes['cliente'][imprime_clientes])
 
 
 
