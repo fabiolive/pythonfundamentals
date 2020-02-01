@@ -82,3 +82,23 @@
 #     print('Você pode dirigir')
 # else:
 #     print('Você não pode dirigir')
+
+
+
+
+# frutas = ['banana','abacaxi','maracuja']
+
+# if 'caju' in frutas:
+#     print('a lista frutas possui caju')
+# else:
+#     print('a lista frutas não posui caju')
+
+
+usuarios = ['rafael','camila','paulo','pamela']
+
+nome = input('Digite o nome do usuário: ')
+if nome.lower() in usuarios:
+    print('Acesso permitido')
+else:
+    print('Acesso negado')
+
