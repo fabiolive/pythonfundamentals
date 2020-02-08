@@ -47,10 +47,25 @@
 # print(soma(10,5))
 # print(sub(15,5))
 
-def maior(x,y):
-    if x > y:
-        print(x)
-    else:
-        print(y)
+# def maior(x,y):
+#     if x > y:
+#         print(x)
+#     else:
+#         print(y)
 
-maior(100,5)
+# maior(100,5)
+
+# args
+
+
+# def maior(*valores):
+#     print(max(valores))
+
+
+# maior(1,2,3,5,3,5,56,3,5,5,)
+
+import requests
+
+def api(**valores):
+    req = requests.get(valores['URL'])
+    print(valores)
