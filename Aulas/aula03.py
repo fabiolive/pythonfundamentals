@@ -58,16 +58,43 @@
 
 
 
-#finally
+# #finally
 
-try:
-    x = int(input("Digite o primeiro valor: "))
-    y = int(input("Digite o segundo valor: "))
-    print(x + y)
-    break
-except ValueError:
-    print('digite apenas números ')
+# try:
+#     x = int(input("Digite o primeiro valor: "))
+#     y = int(input("Digite o segundo valor: "))
+#     print(x + y)
+#     break
+# except ValueError:
+#     print('digite apenas números ')
 
-finally:
-    print('Saindo do try/exept')
-    
+# finally:
+#     print('Saindo do try/exept')
+
+
+
+
+# blacklist = ['daniel','camila']
+# try:
+#     nome = input('Digite o seu nome: ')
+#     print(nome)
+#     if nome in blacklist:
+#         raise NameError('Usuário bloqueado')
+# except NameError as n:
+#     print(n)
+
+# abrindo arquivos!!!
+
+
+#COMANDO 'whith open '
+
+# with open ('Arquivo.txt', 'a') as f:
+#     f.seek(0)   
+#     f.write('Curso de Python')
+
+with open ('Arquivo.txt', 'r') as f:
+    print(f.read())
+    f.seek(0)
+    print(f.read())
+    f.close()
+
