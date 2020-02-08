@@ -64,8 +64,26 @@
 
 # maior(1,2,3,5,3,5,56,3,5,5,)
 
-import requests
 
-def api(**valores):
-    req = requests.get(valores['URL'])
-    print(valores)
+# t = dict(key='valor',key2='valor 2)
+# import requests
+
+# def api(**valores):
+#     req = requests.get(valores['URL'])
+#     print(valores)
+#     return req
+
+
+# print(api(URL='https://www.google.com', code_status='valor_esperado_200', retorno='OK'))
+
+
+
+
+#FUNÇÃO LAMBIDA
+
+lista = [1,2,4,5,6,7,8,9]
+
+dobro = list(map(lambda x : x*2,lista))
+print(dobro)
+
+
