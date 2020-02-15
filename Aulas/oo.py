@@ -19,16 +19,23 @@ class Servidor():
         self.processador = processador
         self.memoria = memoria
 
-def addMemoria(self,addm):
-    self.memoria += addm
-def addArmazenamento(self, adda):
-    self.disco += adda
-def mudaSevico(self, muda):
-    self.servico += muda
+    def addMemoria(self,addm):
+        self.memoria += addm
+    def addArmazenamento(self, addd):
+        self.disco += addd
+    def mudaSevico(self, muda):
+        self.servico = muda
 
 
-servidorWeb = Servidor('Nginx',250,'I7 9 Gereção',16)
-adm = int(input('Digite a quandidade de mempria a armazenar'))
-print(servidorWeb.memoria(adm))
+servidorWeb = Servidor('Nginx', 250,'I7 9 Gereção', 16)
+
+servidorWeb.addMemoria(10)
+servidorWeb.addArmazenamento(100)
+servidorWeb.mudaSevico('firefox')
+print(servidorWeb.memoria)
+print(servidorWeb.disco)
+print(servidorWeb.servico)
 
 
+
+import os.
