@@ -2,17 +2,8 @@ INSERT INTO scripts(nome, conteudo) VALUES ('HELLO.PY','print("script de teste")
 [sudo] senha para developer: 
 root@developer:~# su - postgres
 postgres@developer:~$ psql
-psql: não pôde conectar ao servidor: Arquivo ou diretório inexistente
-	O servidor está executando localmente e aceitando
-	conexões no soquete de domínio Unix "/var/run/postgresql/.s.PGSQL.5432"?
-postgres@developer:~$ systemctl start postgresqltgresql
-Failed to start postgresqltgresql.service: Unit postgresqltgresql.service not found.
-postgres@developer:~$ psql
-psql: não pôde conectar ao servidor: Arquivo ou diretório inexistente
-	O servidor está executando localmente e aceitando
-	conexões no soquete de domínio Unix "/var/run/postgresql/.s.PGSQL.5432"?
-postgres@developer:~$ systemctl start postgresqltgresql
-Failed to start postgresqltgresql.service: Unit postgresqltgresql.service not found.
+SUBINDO  SERVIÇO DO postgres ....
+
 postgres@developer:~$ systemctl start postgresql
 pspostgres@developer:~$ psql
 psql (11.1 (Ubuntu 11.1-3.pgdg18.04+1), servidor 10.6 (Ubuntu 10.6-1.pgdg18.04+1))
@@ -71,19 +62,7 @@ projeto=> select columns from scripts;
 ERROR:  column "columns" does not exist
 LINHA 1: select columns from scripts;
                 ^
-projeto=> show columns from scripts;
-ERROR:  syntax error at or near "from"             "'                                                                   "'
-projeto"> 
-projeto">         ^                                                        p"'                                                                  i
-projeto"> INSERTO INTO scripts(nome, contedudo) values ('hello.py','print("scr"' 
-projeto"> 
-projeto"> 
-projeto"> 
-projeto"> 
-projeto"> 
-projeto"> 
-projeto"> 
-projeto"> 
+
 projeto"> INSERT INTO scripts(nome, conteudo)
 projeto"> VALUES ('HELLO.PY','print("script de teste")')
 projeto"> );
@@ -104,45 +83,8 @@ projeto">
 projeto"> insert into scripts(nome, conteudo) values ('hello.py','print('script de teste')');
 projeto"> select * from scripts;
 projeto"> "
-projeto-> 
-projeto-> ;
-ERROR:  syntax error at or near "INSERTO"
-LINHA 1: INSERTO INTO scripts(nome, contedudo) val"'
-         ^
-projeto=> 
-projeto=> 
-projeto=> 
-projeto=> 
-projeto=> 
-projeto=> INSERTO INTO scripts(nome, contedudo) val"'
-          show columns from scripts;
-          INSERTO INTO scripts(nome, contedudo) val"'
-
-          INSERTO INTO scripts(nome, contedudo) val"'
 
 
-projeto=> ]
-projeto-> 
-projeto-> 
-projeto-> 
-projeto-> 
-projeto-> ;
-ERROR:  syntax error at or near "]"
-LINHA 1: ]
-         ^
-projeto=> ssfszdf
-projeto-> 
-projeto-> 
-projeto-> 
-projeto-> 
-projeto-> d
-projeto-> d
-projeto-> d
-projeto-> d
-projeto-> d
-projeto-> ;
-ERROR:  syntax error at or near "ssfszdf"
-LINHA 1: ssfszdf
          ^
 projeto=> 
 projeto=> 
@@ -224,16 +166,6 @@ postgres@developer:~$ sair
 root@developer:~# sair
 developer@developer:~$ sudo su -
 [sudo] senha para developer: 
-root@developer:~# 
-root@developer:~# 
-root@developer:~# 
-root@developer:~# 
-root@developer:~# 
-root@developer:~# 
-root@developer:~# 
-root@developer:~# 
-root@developer:~# 
-root@developer:~# 
 
 
 
