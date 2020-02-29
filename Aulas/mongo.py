@@ -85,7 +85,12 @@ db = client['dexterops']
 # adicionar_sub()
 
 
-def update_instrutor():
-    db.fila.update({"_id":1, 'instrutores.nome':"Mariana"},
-					{"$set":{"instrutores.$.nome":"Marcia"}})
-update_instrutor()
+# def update_instrutor():
+#     db.fila.update({"_id":1, 'instrutores.nome':"Mariana"},
+# 					{"$set":{"instrutores.$.nome":"Marcia"}})
+# update_instrutor()
+
+
+
+
+
