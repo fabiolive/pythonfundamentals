@@ -6,7 +6,9 @@ def validar_par(num: int) -> bool:
         return True if num% 2 == 0 else False
     elif isinstance(num, str):
         if num.isnumeric():
-            return True if int(num)  % == 0 else False
+            return True if int(num)  % 2 == 0 else False
+        else:
+            return None
 
 
 class Testes(TestCase):
